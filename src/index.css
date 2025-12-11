@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/* define your custom theme variables */
+@theme {
+  --color-primary: #65a30d;
+  --color-secondary: #eab308;
+  --color-background-light: #fcfdf7;
+  --color-background-dark: #1a1c18;
+  --color-surface-light: #ffffff;
+  --color-surface-dark: #272925;
+  
+  --font-sans: "DM Sans", sans-serif;
+  --font-display: "Playfair Display", serif;
+
+  --radius-default: 0.75rem;
+  --radius-xl: 1.5rem;
+}
+
+/* global body styles */
+body {
+  @apply font-sans bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200;
+}

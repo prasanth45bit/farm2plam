@@ -1,0 +1,81 @@
+// Shared data for the product listing page
+export const categories = [
+  { id: 'fruits', label: 'Fruits', count: 120 },
+  { id: 'vegetables', label: 'Vegetables', count: 85 },
+  { id: 'dairy', label: 'Dairy & Eggs', count: 42 },
+  { id: 'live', label: 'Live Produce', count: 12 },
+  { id: 'herbs', label: 'Herbs & Spices', count: 28 },
+];
+
+export const products = [
+  {
+    id: 'p1',
+    title: 'Hass Avocados',
+    subtitle: 'Locally grown in California',
+    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCqsFPXiEYvRUQZ5c3ymSG3aeTbOW3el2EmZaJ_DXDCNDuApATb2LlEFesE_H6RQKZbInc34Vm-9W4gI4TQotWpSaH0RiAbzTOuZR3RAnxDZnDI_L2FQptQfrFkIft_Cr7yGEhjuKJ5TNciCYBvk6_vyS-C8i090x5QqddG69x_u4mmZoVJluDH5HR8gR0ubpL-R70LSLKhxNkBp_bgK1OYOyD-kkrc7879oloDmB342vYmvSD1uAMktAChqRZtWQ1jHoFtIsIhqk9b',
+    price: 1.5,
+    oldPrice: 2.0,
+    unit: 'each',
+    rating: 4,
+    reviews: 128,
+    badge: 'Organic',
+  },
+  {
+    id: 'p2',
+    title: 'Organic Curly Kale',
+    subtitle: 'Fresh from Green Valley',
+    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCebmZt9ehbOQBfYsdddscng42fhRajBlGLPaQkm4nUQemHJgXCVwViT16epuZFtUXsNs0-qa_2p8bnTG8nW-S8x9YoKw4o8soeEnNxPNfC2k6i56A2N8OEWVnf9VQ39YNLr-moROD7lZ-XkJLq-0ZkfY1t3rs_fMlWCgzwIim59ol9xI5ci-Ej2lSPh7subK7-4htOJM8jdpoqdk8ksVNktDNzPaCuIbsPV_ylK9bgvE7k-O_KAAUuz9R-xKRJ8PZlBTxqg0ydplNZ',
+    price: 3.99,
+    unit: 'bunch',
+    rating: 5,
+    reviews: 45,
+    badge: 'Sale 20%',
+  },
+  {
+    id: 'p3',
+    title: 'Meyer Lemons',
+    subtitle: 'Sweet & tangy citrus',
+    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCiKP1Q12sWuF8K5wSK6hBFdS3fYQY93MeyJ_DuT9Jsb3j_2CxFwYZ2FS2hz7SVP7_k7_cxN9Mw1UD3GkoocHENX-HcbiSSa4lxcyk8bf_0y5K_2XE8p4snAWaKtlOn3e8htGI2do8Lr-lfJbgP3DMaeO9uv4kPtUsD6_kuDpzbK0JfrxediDagO2eY_MsfyqlgLYN69hY07mBm1hUI8A9EsmX9S2TfZbpxWJied-bMtcFfLIKC21EQj9HybZNVwrbe0-QKHLBw3exn',
+    price: 5.49,
+    unit: 'bag',
+    rating: 4.5,
+    reviews: 89,
+  },
+  {
+    id: 'p4',
+    title: 'Fuji Apples',
+    subtitle: 'Crisp & sweet',
+    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDJ9z7xpElTKc1JLbE0yDGM2ql8K_eAEfaKi_ib-PAfZr2QtTPLLvqIDyitLftGMf1F8t8S3zn9oyaJonF_fF_Y1vChzjuXxPAXbdEvgBpmvVPX_KlNjMeguVrEJ2_hqT2R4TN0wLVQTYuXdG6MyCMZM1Ree9PDDKQxyBl-u9y6AcezmLozNhP8x0n_NC2LA6dR4hiTkXm0LBzLO19-XzaqsLeM36yqpZzMmx9yUaz-uU0dDA7lWLhWClp2xC3sYbPtSn8BUSDV4gpP',
+    price: 2.99,
+    unit: 'lb',
+    rating: 5,
+    reviews: 210,
+    badge: 'Organic',
+  },
+  {
+    id: 'p5',
+    title: 'Whole Raw Milk',
+    subtitle: 'Grass-fed dairy',
+    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDz7N5cQyzZ0r2i4hmDMYWXdBWn18xiSo5sgG4icaLfDQcUUQc0jqHZdOm47_x9hxTn5roflwKo8esg2NEOLp3r9-rZWMb3UHqvMI-g4cEk5V9nJ-R-nhnPFSUaWGYdJM2TOyVTGvVkktEhlWf3wunW-zaQGbkz3qy3SGhuNssBmPsEmlJ1LO-gjJlvmTjX49RmGwaCwW8JytjPbAX3sXov2uhKbmIVi2XRcxam1DRX09SeivETILXLf7mwx48ss1wihMHo1y_dNgTq',
+    price: 6.49,
+    unit: 'gallon',
+    rating: 4,
+    reviews: 56,
+  },
+  {
+    id: 'p6',
+    title: 'Heirloom Tomatoes',
+    subtitle: 'Vine-ripened variety',
+    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDKw0NxPD0Ei6-ekwe81lu2Rzsw3eLcpTrEE6EtfYMqNCMR8NemFZFkUEsuFOr1XfDb5GRXuVHP5QHrMKmuL8MuumFC8pjd9fIGHwS2i4jAd2vcBLTU4mtrTLafFzIl8Z0-x96qC3oXh140TEOS0WDOjkEfJ7XCdcXapSd1uUd-8IG54U7JLs2kYcgqD6yiN9ktq3-XY_5eFy2y_XcYCEIyPyxBK8S6f-4Cl1cNsOWgezIjjUKzn2cgEwUiuWKg9Yrw_bH9wsQRS6sJ',
+    price: 4.99,
+    unit: 'lb',
+    rating: 5,
+    reviews: 12,
+    badge: 'New',
+  },
+];
+
+export const meta = {
+  siteTitle: 'FarmFresh',
+  tagline: 'Fresh from the Farm',
+};

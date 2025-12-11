@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Farm2Palm India - Organic E-commerce</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#65a30d", // A vibrant, fresh green (lime-600)
+                        secondary: "#eab308", // A warm yellow for accents
+                        "background-light": "#fcfdf7", // Very subtle off-white/greenish tint
+                        "background-dark": "#1a1c18", // Dark earthy charcoal
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#272925",
+                    },
+                    fontFamily: {
+                        sans: ['DM Sans', 'sans-serif'],
+                        display: ['Playfair Display', 'serif'],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.75rem", // 12px
+                        xl: "1.5rem", // 24px
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200 transition-colors duration-300 font-sans antialiased">
+<nav class="sticky top-0 z-50 bg-surface-light dark:bg-surface-dark shadow-sm border-b border-gray-100 dark:border-gray-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex-shrink-0 flex items-center gap-2">
+<div class="bg-primary text-white p-1.5 rounded-full">
+<span class="material-icons-outlined text-2xl">agriculture</span>
+</div>
+<div>
+<span class="font-display font-bold text-2xl text-gray-900 dark:text-white leading-none block">Farm<span class="text-primary">2</span>Palm</span>
+<span class="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400 font-bold">India Ki Organics</span>
+</div>
+</div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-primary font-medium hover:text-primary transition" href="#">Home</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition font-medium" href="#about">About Us</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition font-medium" href="#products">Products</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition font-medium" href="#services">Services</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition font-medium" href="#contact">Contact</a>
+</div>
+<div class="hidden md:flex items-center space-x-6">
+<button class="text-gray-500 dark:text-gray-400 hover:text-primary transition">
+<span class="material-icons-outlined">search</span>
+</button>
+<div class="relative">
+<button class="text-gray-500 dark:text-gray-400 hover:text-primary transition">
+<span class="material-icons-outlined">shopping_bag</span>
+</button>
+<span class="absolute -top-1 -right-1 bg-secondary text-white text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center">0</span>
+</div>
+<a class="bg-primary hover:bg-lime-700 text-white px-6 py-2.5 rounded-full font-bold text-sm transition transform hover:scale-105 shadow-lg shadow-lime-500/30" href="#">
+                        Shop Now
+                    </a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="text-gray-500 dark:text-gray-300">
+<span class="material-icons-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<header class="relative bg-surface-light dark:bg-surface-dark overflow-hidden">
+<div class="absolute top-0 right-0 -mr-20 -mt-20 w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl"></div>
+<div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-[400px] h-[400px] bg-secondary/10 rounded-full blur-3xl"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 bg-green-100 dark:bg-green-900/30 px-4 py-2 rounded-full text-primary font-bold text-sm uppercase tracking-wide">
+<span class="material-icons-outlined text-base">eco</span> 100% Organic &amp; Chemical Free
+                    </div>
+<h1 class="text-5xl lg:text-7xl font-display font-bold text-gray-900 dark:text-white leading-tight">
+                        Tasty &amp; Healthy <br/>
+<span class="text-primary relative inline-block">
+                            Organic Food
+                            <svg class="absolute w-full h-3 -bottom-1 left-0 text-secondary opacity-60" fill="none" viewBox="0 0 200 9" xmlns="http://www.w3.org/2000/svg"><path d="M2.00025 6.99997C25.7509 9.36481 124.98 9.61398 198.9 2.59762" stroke="currentColor" stroke-width="3"></path></svg>
+</span>
+</h1>
+<p class="text-lg text-gray-600 dark:text-gray-300 max-w-lg leading-relaxed">
+                        Get farm-fresh, chemical-free organic products directly from farmers with zero brokerage. Enjoy a healthier lifestyle with A2 milk, ghee, paneer, and fresh produce.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-2">
+<a class="bg-primary hover:bg-lime-700 text-white px-8 py-4 rounded-full font-bold text-base transition transform hover:-translate-y-1 shadow-xl shadow-lime-600/30 flex items-center gap-2" href="#products">
+                            Discover More <span class="material-icons-outlined">arrow_forward</span>
+</a>
+<a class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 hover:border-primary text-gray-800 dark:text-white px-8 py-4 rounded-full font-bold text-base transition flex items-center gap-2" href="#about">
+<span class="material-icons-outlined text-primary">play_circle</span> Watch Video
+                        </a>
+</div>
+</div>
+<div class="relative">
+<div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl dark:shadow-none border-4 border-white dark:border-gray-800 transform rotate-2 hover:rotate-0 transition duration-500">
+<img alt="Farmer holding a basket of fresh vegetables" class="w-full h-auto object-cover aspect-[4/3]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgoqnPkoZtdrVB5x1PixWvehEJFGVDybMBAH9as_wwHtKhDnnbKdWCwQZhlcpbNiWJZVDKIorJSEcDdHwwJ5KxLWdov06wSdnC7ZXFz54enxZwKFILekvZ2cjqISjvS3C5YpydqxaOWZtMeocRgPG5P5fUmOXUZ94dZ_gj01fixrnzt9OmqmFRd3HGuhdq3moxjW0TwZvNrg_IUnKOwjNR0yM38N6mWepS1p74riQgGPxp1vZgRBggZCRDhSHG2n0cF135GHkU_exU"/>
+<div class="absolute bottom-6 left-6 bg-white/90 dark:bg-black/80 backdrop-blur-sm p-4 rounded-xl shadow-lg flex items-center gap-4 max-w-xs">
+<div class="bg-secondary p-2 rounded-full text-white">
+<span class="material-icons-outlined">star</span>
+</div>
+<div>
+<p class="font-bold text-gray-900 dark:text-white text-sm">Top Quality</p>
+<p class="text-xs text-gray-500 dark:text-gray-400">Certified Organic Products</p>
+</div>
+</div>
+</div>
+<img alt="Floating leaf" class="absolute -top-12 -right-8 w-24 h-24 object-contain opacity-80 animate-bounce" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqRgOPVLU2xtQdCwqQRZa_3oPbW5yEGFlBSh7jZycpXYKx6vGZQSn6y8yVnqThq8XXbG9Dqz7XTQnBSWEVv8LQylnW8kOJqhAVxsqnh3rUaGX2XyBwAKq00-z4P2SgvEc6ti8vZQM5K0DSEVWZMcnm8luag3msN0l839vRUh7sCID1SuNzfaLjsYzMRcKY711EPeq1KvsQFZr1_WtksdgvBh6HTiMqIdHYuukZ5V8apoO6Lon8cirN_d9sNFaSWGDOwz5H-ZPHJJKh" style="animation-duration: 3s;"/>
+<img alt="Fresh vegetable decoration" class="absolute -bottom-10 -left-10 w-32 h-32 object-contain opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPgf1ThUURCbX32jdI01KZ2u4GlfD7fkZK2c1CEJX972REPqF7YHChQYS92fOp5Rv2poEIJfFfGHQBpxDQfKC9LhYTg74fAm7hNwTd5rMIrLLfvcWFttO8xSd1ruh2LfRnQkBfeDTbaYAwuHs2ukSeAWM-9gaWgo5VqCeBHLPqP3kDa3Jo5LJlk9IaRD3t8iekCwxHypUxy9S_XLWDqP0CjcXuhNbyhrp1USgfU0iDJpXnGlnS0RqsL3JUzvnpPR-1GKnPwbyTPDer"/>
+</div>
+</div>
+</div>
+</header>
+<section class="py-16 bg-white dark:bg-surface-dark border-t border-gray-100 dark:border-gray-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+<div class="p-8 rounded-2xl bg-background-light dark:bg-background-dark hover:shadow-lg transition duration-300 group">
+<div class="w-16 h-16 bg-green-100 dark:bg-green-900/30 text-primary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition">
+<span class="material-icons-outlined text-3xl">spa</span>
+</div>
+<h3 class="font-display font-bold text-xl text-gray-900 dark:text-white mb-3">100% Organic</h3>
+<p class="text-gray-500 dark:text-gray-400">Grown without chemicals for a healthier lifestyle directly from mother earth.</p>
+</div>
+<div class="p-8 rounded-2xl bg-background-light dark:bg-background-dark hover:shadow-lg transition duration-300 group">
+<div class="w-16 h-16 bg-yellow-100 dark:bg-yellow-900/30 text-secondary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition">
+<span class="material-icons-outlined text-3xl">handshake</span>
+</div>
+<h3 class="font-display font-bold text-xl text-gray-900 dark:text-white mb-3">Zero Brokerage</h3>
+<p class="text-gray-500 dark:text-gray-400">Directly from farmers to your palm. No middlemen, fair prices for everyone.</p>
+</div>
+<div class="p-8 rounded-2xl bg-background-light dark:bg-background-dark hover:shadow-lg transition duration-300 group">
+<div class="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition">
+<span class="material-icons-outlined text-3xl">local_shipping</span>
+</div>
+<h3 class="font-display font-bold text-xl text-gray-900 dark:text-white mb-3">Farm Fresh Delivery</h3>
+<p class="text-gray-500 dark:text-gray-400">Fresh fruits, vegetables, and A2 milk products delivered straight to your door.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-background-light dark:bg-background-dark relative" id="products">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="text-primary font-bold uppercase tracking-wider text-sm">Our Products</span>
+<h2 class="text-4xl font-display font-bold text-gray-900 dark:text-white mt-2 mb-4">Farm Fresh Categories</h2>
+<div class="w-20 h-1 bg-secondary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="group relative rounded-2xl overflow-hidden shadow-md cursor-pointer h-80">
+<img alt="Fresh Milk and Dairy" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA88GgxOgbQS2JyDlv1I8E3Ya8-s24yuBZAyYzO6i5AkoTTB4sPn1pM2KNXRJOfOMcGBh-zXl-2RhGFH120adK28mSl0WZdAVNNT4z8Xm8NtDkqXzJfDkS0Tt0oaEhs-xRoDerg6wg4U0o5S8QsTuabwJoKUxXta2Czq24fMSxnp3evb9x1dOLLBktpfvpwi9Y8zH6ZoPspV6mWb522tMTfg5XAYe0hZSLQsnUMBe2B8Z2IGxB41i7lDQhZXX5-LpDurATF4jSBkOiG"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
+<h3 class="text-white font-display font-bold text-2xl mb-2">A2 Milk &amp; Dairy</h3>
+<p class="text-gray-300 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">Ghee, Paneer, and pure A2 Milk.</p>
+<a class="inline-flex items-center text-secondary font-bold text-sm uppercase tracking-wide group-hover:text-white transition" href="#">Shop Now <span class="material-icons-outlined ml-1 text-base">arrow_forward</span></a>
+</div>
+</div>
+<div class="group relative rounded-2xl overflow-hidden shadow-md cursor-pointer h-80">
+<img alt="Basket of fresh vegetables" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT4Bbms3CkEk9ky797G01bRWjslBd_8cHWAvOJE6C0162Og68deaYHPF8UWLVMQ4vo16A13qNBPL7wDcrpEzHPK_iT_jm0dsd9AVIBIRH5Ehh0htiEIgkWvFsAQ4qC0I6xwYw6GUJa4eVtGbN909TIv_HrEz0Uhf_XB9Dq7XbTAQ3xU5MzIaxeJ4a45vhiuFkljXy93dnROHJz5tA7zZjmOx-FP81CIVk9NQUXLGCVcyQDggtYjjUAfh1kBGM8SE9Mg0pcQnZrqGIo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
+<h3 class="text-white font-display font-bold text-2xl mb-2">Fresh Vegetables</h3>
+<p class="text-gray-300 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">Chemical-free greens from the garden.</p>
+<a class="inline-flex items-center text-secondary font-bold text-sm uppercase tracking-wide group-hover:text-white transition" href="#">Shop Now <span class="material-icons-outlined ml-1 text-base">arrow_forward</span></a>
+</div>
+</div>
+<div class="group relative rounded-2xl overflow-hidden shadow-md cursor-pointer h-80">
+<img alt="Country Chicken and Hens" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByJwDtGEFGWU2jkM75JWXzdQGZ1ZqHUtobQTyzmLuWWIovXQT-DeT5CaYYn75Ay7Z4u3sRCaelR20Fxc4O5wHjnQhhFrPHMaxx2XFe_zXI3nYTNuJIsO5fUe6Zo7U99aoF2-hxKeDyZGcIVCao4QcEA3rqM-ADTTkVy5nPavlruwkieEW-ndKhgtLotCVwLV4TtFAVxl7GfdJ4MHZevHrL9nJaiG41Oo-qHYnka5smhxyqGoc5mzHHZfX_HB8FXv1HvnJYXfCoWBI2"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
+<h3 class="text-white font-display font-bold text-2xl mb-2">Country Chicken &amp; Fish</h3>
+<p class="text-gray-300 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">Live fish and healthy poultry.</p>
+<a class="inline-flex items-center text-secondary font-bold text-sm uppercase tracking-wide group-hover:text-white transition" href="#">Shop Now <span class="material-icons-outlined ml-1 text-base">arrow_forward</span></a>
+</div>
+</div>
+<div class="group relative rounded-2xl overflow-hidden shadow-md cursor-pointer h-80 lg:col-span-2">
+<img alt="Assorted Spices" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFBkV9d8FCEBm2CvqEvZ4Oy-e4H-bVlN-T0j7w86HoRN_wXUKAHG7CCJosYypeJwy214igjcoXLVLSzuGU8d0KmJXAARcDVMldoFKL-BlHXGeHWuOWePwu9RvK1Lh8lnSqWvA4pifzKJfFwFVHnByQu4r_0OfQpGCPyH0-a9JccWV9ojByH7dSqMJcrCKrBUak98D3M4gqo-e1NeOY3nAGZMyGbgB-U3omgzDktwPrNYcy2SpCsOxxAzQ6JDxPI65WcPpRGkf3ZdNj"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
+<h3 class="text-white font-display font-bold text-2xl mb-2">Spices, Nuts &amp; More</h3>
+<p class="text-gray-300 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">Authentic flavors for your kitchen.</p>
+<a class="inline-flex items-center text-secondary font-bold text-sm uppercase tracking-wide group-hover:text-white transition" href="#">Shop Now <span class="material-icons-outlined ml-1 text-base">arrow_forward</span></a>
+</div>
+</div>
+<div class="group relative rounded-2xl overflow-hidden shadow-md cursor-pointer h-80">
+<img alt="Rich Soil" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu-dovww4n2IrNmvCNUSI22SACfEAQRFOyRXs6iUJqmKSm4cD3kqppYNBEFnc8eesBkN7Y6VjZEErpviN715nfI-hDQ-i0JmMDcNJbuUmDSIReUx60xJRkgd0m_GwTtp7aGGQ8fg8iLRxr0Qhdo_as1kUmlNVyVMDhGpKKHwqhXbKW2muqIMg7vAodwLHchNSStHzt4-xq9Xbbrxk0EHX12eL2fiEqw8vsfLHc96-6drEopoXP4gV81Cmf1zxkX7YXxsqkfni71RlP"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
+<h3 class="text-white font-display font-bold text-2xl mb-2">Earthworm &amp; Soil Care</h3>
+<p class="text-gray-300 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">Production of earthworms for farming.</p>
+<a class="inline-flex items-center text-secondary font-bold text-sm uppercase tracking-wide group-hover:text-white transition" href="#">Shop Now <span class="material-icons-outlined ml-1 text-base">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-primary overflow-hidden" id="services">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+<div class="mb-10 lg:mb-0">
+<img alt="Smart Farming App" class="rounded-3xl shadow-2xl rotate-3 border-4 border-white/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxFSfc90c_6Vel3-XpOW8xKySsaTspONnjY-BflP6xBOeuGxKcx2wxGulwQeJcFYb9H6AsXmKFNhyGBn9xa1zEKpIZAhbkUwVn_JZcZP4AV9G6GKD01Pfxm17lOzJm7sf5QaT8A7b9Eggh2yLmMwjBXcaU8PzTQbrb9eacFqgipXPhe1YKxxM7FOPoHKQfCjjuI5Ri5BmdKmGEvKVHqBPtM3pWBbX48XklI-f-qGSgGdlN_39Y4aO-phL7OOg3Yhc45LET65w95f3u"/>
+</div>
+<div class="text-white">
+<span class="bg-white/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider backdrop-blur-md">Smart Agriculture</span>
+<h2 class="text-4xl lg:text-5xl font-display font-bold mt-4 mb-6 leading-tight">Modern Farming with <br/>Mobile Control</h2>
+<p class="text-lime-100 text-lg mb-8 leading-relaxed">
+                        We don't just sell produce; we innovate. Our farm leasing and development services include mobile app control, automatic valves, electrical panels, motors, and organic farming management systems.
+                    </p>
+<ul class="space-y-4 mb-8">
+<li class="flex items-center gap-3">
+<span class="bg-secondary p-1 rounded-full text-white"><span class="material-icons-outlined text-sm">check</span></span>
+<span class="font-medium">Farm leasing &amp; Development</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="bg-secondary p-1 rounded-full text-white"><span class="material-icons-outlined text-sm">check</span></span>
+<span class="font-medium">Mobile App Automation</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="bg-secondary p-1 rounded-full text-white"><span class="material-icons-outlined text-sm">check</span></span>
+<span class="font-medium">IoT Sensors for Soil Health</span>
+</li>
+</ul>
+<a class="inline-block bg-white text-primary font-bold px-8 py-3 rounded-full hover:bg-gray-100 transition shadow-lg" href="#">Learn Technology</a>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface-light dark:bg-surface-dark" id="about">
+<div class="max-w-4xl mx-auto px-4 text-center">
+<div class="mb-8">
+<div class="inline-flex items-center justify-center w-20 h-20 bg-primary/10 rounded-full mb-6">
+<span class="material-icons-outlined text-4xl text-primary">diversity_3</span>
+</div>
+<h2 class="text-4xl font-display font-bold text-gray-900 dark:text-white mb-6">Farm-to-Palm Philosophy</h2>
+<p class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                    "Farm2Palm India" bridges the gap between conscientious farmers and health-conscious consumers. By eliminating brokers, we ensure farmers get their due worth and you get produce that is untouched by delays and chemicals. 
+                </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="p-4 bg-background-light dark:bg-background-dark rounded-xl border border-gray-100 dark:border-gray-800">
+<h4 class="text-3xl font-bold text-primary mb-1">3+</h4>
+<p class="text-sm text-gray-500 dark:text-gray-400 font-medium">Years Active</p>
+</div>
+<div class="p-4 bg-background-light dark:bg-background-dark rounded-xl border border-gray-100 dark:border-gray-800">
+<h4 class="text-3xl font-bold text-primary mb-1">100%</h4>
+<p class="text-sm text-gray-500 dark:text-gray-400 font-medium">Chemical Free</p>
+</div>
+<div class="p-4 bg-background-light dark:bg-background-dark rounded-xl border border-gray-100 dark:border-gray-800">
+<h4 class="text-3xl font-bold text-primary mb-1">24h</h4>
+<p class="text-sm text-gray-500 dark:text-gray-400 font-medium">Fresh Delivery</p>
+</div>
+<div class="p-4 bg-background-light dark:bg-background-dark rounded-xl border border-gray-100 dark:border-gray-800">
+<h4 class="text-3xl font-bold text-primary mb-1">50+</h4>
+<p class="text-sm text-gray-500 dark:text-gray-400 font-medium">Farmer Partners</p>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-gray-900 text-white pt-20 pb-10" id="contact">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<div class="space-y-6">
+<div class="flex items-center gap-2">
+<div class="bg-primary text-white p-1.5 rounded-full">
+<span class="material-icons-outlined text-xl">agriculture</span>
+</div>
+<span class="font-display font-bold text-2xl">Farm<span class="text-primary">2</span>Palm</span>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed">
+                        Connecting you directly to the source of your food. Authentic, organic, and healthy products for a better life.
+                    </p>
+<div class="flex space-x-4">
+<a class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition text-white" href="#">
+<svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition text-white" href="#">
+<svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772 4.902 4.902 0 011.772-1.153c.636-.247 1.363-.416 2.427-.465 1.067-.047 1.409-.06 3.809-.063zm1.327 8.597c1.32.177 2.292 1.296 2.224 2.636-.104 2.025-2.147 3.321-3.896 2.486-.94-.326-1.579-1.256-1.554-2.285.02-1.296.992-2.384 2.288-2.529.355-.04.721-.016 1.055.084l-.117-.393zm-3.468 2.768c.21 1.055 1.218 1.745 2.247 1.536 1.055-.21 1.745-1.218 1.536-2.247-.21-1.055-1.218-1.745-2.247-1.536-1.055.21-1.745 1.218-1.536 2.247z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+</div>
+<div>
+<h3 class="font-display font-bold text-lg mb-6 text-white">Quick Links</h3>
+<ul class="space-y-3 text-sm text-gray-400">
+<li><a class="hover:text-primary transition" href="#">Home</a></li>
+<li><a class="hover:text-primary transition" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition" href="#">Shop Products</a></li>
+<li><a class="hover:text-primary transition" href="#">Our Services</a></li>
+<li><a class="hover:text-primary transition" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="lg:col-span-2">
+<h3 class="font-display font-bold text-lg mb-6 text-white">Contact Us</h3>
+<ul class="space-y-4">
+<li class="flex items-start gap-4">
+<div class="bg-gray-800 p-2 rounded-full text-primary shrink-0">
+<span class="material-icons-outlined text-sm">location_on</span>
+</div>
+<span class="text-gray-400 text-sm">24K, VOC Nagar 1st Street, (Ambal School Road), Sirumugai, Coimbature - 641 302, India.</span>
+</li>
+<li class="flex items-center gap-4">
+<div class="bg-gray-800 p-2 rounded-full text-primary shrink-0">
+<span class="material-icons-outlined text-sm">phone</span>
+</div>
+<div class="text-gray-400 text-sm flex flex-col">
+<a class="hover:text-white transition" href="tel:8610825382">+91 86108 25382</a>
+<a class="hover:text-white transition" href="tel:9486084040">+91 94860 84040</a>
+</div>
+</li>
+<li class="flex items-center gap-4">
+<div class="bg-gray-800 p-2 rounded-full text-primary shrink-0">
+<span class="material-icons-outlined text-sm">email</span>
+</div>
+<a class="text-gray-400 text-sm hover:text-white transition" href="mailto:farm2palmindia@gmail.com">farm2palmindia@gmail.com</a>
+</li>
+<li class="flex items-center gap-4">
+<div class="bg-gray-800 p-2 rounded-full text-primary shrink-0">
+<span class="material-icons-outlined text-sm">language</span>
+</div>
+<a class="text-gray-400 text-sm hover:text-white transition" href="https://www.farm2palm.in" target="_blank">www.farm2palm.in</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-gray-500 text-sm">© 2023 Farm2Palm India. All rights reserved.</p>
+<div class="flex space-x-6 text-sm text-gray-500">
+<a class="hover:text-white transition" href="#">Privacy Policy</a>
+<a class="hover:text-white transition" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>
