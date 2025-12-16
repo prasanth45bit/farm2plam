@@ -23,11 +23,11 @@ export default function ProductCard({ product }) {
         </div>
 
         <div className="mt-3 flex items-center justify-between">
-          <div>
+          {/* <div>
             <div className="text-lg font-bold text-black">{product.price}</div>
             {product.oldPrice && <div className="text-xs text-gray-500 line-through">{product.oldPrice}</div>}
-          </div>
-          <button className="bg-green-600 text-white px-3 py-1 rounded text-sm">Add</button>
+          </div> */}
+          {/* <button className="bg-green-600 text-white px-3 py-1 rounded text-sm">Add</button> */}
         </div>
       </div>
     </div>

@@ -46,20 +46,52 @@ export default function Navbar() {
               <span className="absolute -top-1 -right-1 bg-secondary text-white text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center">0</span>
             </div>
 
-            <Link 
-              to="/products" 
+            <Link
+              to="/products"
               className="bg-primary hover:bg-lime-700 text-white px-6 py-2.5 rounded-full font-bold text-sm"
             >
               Shop Now
             </Link>
 
-            <button className="hidden sm:inline-flex items-center px-3 py-1 rounded-md text-sm border">
+            <button
+              className="
+    hidden sm:inline-flex items-center
+    px-4 py-2
+    rounded-lg
+    text-sm font-semibold
+    border border-gray-200
+    bg-white/70 backdrop-blur
+    text-gray-700
+    shadow-sm
+    transition-all duration-300
+    hover:bg-primary hover:text-white hover:border-primary
+    hover:shadow-md hover:-translate-y-0.5
+    focus:outline-none focus:ring-2 focus:ring-primary/40
+  "
+            >
               Sign In
             </button>
 
-            <button className="hidden sm:inline-flex items-center px-3 py-1 rounded-md text-sm border">
-              <User size={16} className="mr-2" /> Account
+            <button
+              className="
+    hidden sm:inline-flex items-center
+    px-4 py-2 ml-2
+    rounded-lg
+    text-sm font-semibold
+    border border-gray-200
+    bg-white/70 backdrop-blur
+    text-gray-700
+    shadow-sm
+    transition-all duration-300
+    hover:bg-primary hover:text-white hover:border-primary
+    hover:shadow-md hover:-translate-y-0.5
+    focus:outline-none focus:ring-2 focus:ring-primary/40
+  "
+            >
+              <User size={16} className="mr-2" />
+              Account
             </button>
+
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -91,10 +123,45 @@ export default function Navbar() {
 
             {/* Mobile Account Buttons */}
             <div className="px-4 mt-3 space-y-2">
-              <button className="w-full px-3 py-2 border rounded-md text-sm">Sign In</button>
-              <button className="w-full px-3 py-2 border rounded-md text-sm flex items-center justify-center">
-                <User size={16} className="mr-2" /> Account
+              <button
+                className="
+    hidden sm:inline-flex items-center
+    px-4 py-2
+    rounded-lg
+    text-sm font-semibold
+    border border-gray-200
+    bg-white/70 backdrop-blur
+    text-gray-700
+    shadow-sm
+    transition-all duration-300
+    hover:bg-primary hover:text-white hover:border-primary
+    hover:shadow-md hover:-translate-y-0.5
+    focus:outline-none focus:ring-2 focus:ring-primary/40
+  "
+              >
+                Sign In
               </button>
+
+              <button
+                className="
+    hidden sm:inline-flex items-center
+    px-4 py-2 ml-2
+    rounded-lg
+    text-sm font-semibold
+    border border-gray-200
+    bg-white/70 backdrop-blur
+    text-gray-700
+    shadow-sm
+    transition-all duration-300
+    hover:bg-primary hover:text-white hover:border-primary
+    hover:shadow-md hover:-translate-y-0.5
+    focus:outline-none focus:ring-2 focus:ring-primary/40
+  "
+              >
+                <User size={16} className="mr-2" />
+                Account
+              </button>
+
             </div>
 
           </div>

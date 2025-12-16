@@ -2,8 +2,33 @@ export const catalogData = [
   /* ===================== VEGETABLES ===================== */
   {
     id: "vegetables",
-    title: "Fresh Vegetables",
+    title: "Fresh Vegetables & Fruits",
     description: "Chemical-free vegetables directly from local organic farms.",
+    shortDescription:
+    "Rediscover the joy of dairy with our selection of 100% A2 protein milk.",
+  longDescription:
+    "Our heritage breed cows produce milk containing only the A2 beta-casein protein. Sourced from local farms practicing ethical animal welfare.",
+
+  coverImage:
+    "https://lh3.googleusercontent.com/aida-public/AB6AXuDz7N5cQyzZ0r2i4hmDMYWXdBWn18xiSo5sgG4icaLfDQcUUQc0jqHZdOm47_x9hxTn5roflwKo8esg2NEOLp3r9-rZWMb3UHqvMI-g4cEk5V9nJ-R-nhnPFSUaWGYdJM2TOyVTGvVkktEhlWf3wunW-zaQGbkz3qy3SGhuNssBmPsEmlJ1LO-gjJlvmTjX49RmGwaCwW8JytjPbAX3sXov2uhKbmIVi2XRcxam1DRX09SeivETILXLf7mwx48ss1wihMHo1y_dNgTq",
+
+  features: [
+    {
+      icon: "spa",
+      title: "Easier Digestion",
+      desc: "Free from A1 protein to prevent bloating.",
+    },
+    {
+      icon: "water_drop",
+      title: "Nutrient Dense",
+      desc: "Rich in Calcium, Potassium & Vitamin D.",
+    },
+    {
+      icon: "agriculture",
+      title: "Grass-Fed Cows",
+      desc: "No hormones or antibiotics used.",
+    },
+  ],
     products: [
       {
         id: "veg1",
@@ -64,75 +89,38 @@ export const catalogData = [
     ],
   },
 
-  /* ===================== FRUITS ===================== */
-  {
-    id: "fruits",
-    title: "Fresh Fruits",
-    description: "Seasonal fruits harvested at peak ripeness.",
-    products: [
-      {
-        id: "fr1",
-        title: "Fuji Apples",
-        price: 2.99,
-        unit: "kg",
-        rating: 5,
-        reviews: 210,
-        badge: "Organic",
-        image: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce",
-      },
-      {
-        id: "fr2",
-        title: "Bananas",
-        price: 1.29,
-        unit: "dozen",
-        rating: 4,
-        reviews: 98,
-        image: "https://images.unsplash.com/photo-1574226516831-e1dff420e43e",
-      },
-      {
-        id: "fr3",
-        title: "Meyer Lemons",
-        price: 5.49,
-        unit: "bag",
-        rating: 4.5,
-        reviews: 89,
-        image: "https://images.unsplash.com/photo-1582284540020-8acbe03f4924",
-      },
-      {
-        id: "fr4",
-        title: "Strawberries",
-        price: 4.99,
-        unit: "box",
-        rating: 5,
-        reviews: 77,
-        image: "https://images.unsplash.com/photo-1464965911861-746a04b4bca6",
-      },
-      {
-        id: "fr5",
-        title: "Pomegranates",
-        price: 3.99,
-        unit: "kg",
-        rating: 4,
-        reviews: 35,
-        image: "https://images.unsplash.com/photo-1576402187878-974f70c890a5",
-      },
-      {
-        id: "fr6",
-        title: "Oranges",
-        price: 2.49,
-        unit: "kg",
-        rating: 4,
-        reviews: 58,
-        image: "https://images.unsplash.com/photo-1580910051073-dc7c3a4edfe2",
-      },
-    ],
-  },
+  
 
   /* ===================== DAIRY ===================== */
   {
     id: "dairy",
     title: "A2 Milk & Dairy",
     description: "Pure dairy from grass-fed indigenous cows.",
+    shortDescription:
+    "Rediscover the joy of dairy with our selection of 100% A2 protein milk.",
+  longDescription:
+    "Our heritage breed cows produce milk containing only the A2 beta-casein protein. Sourced from local farms practicing ethical animal welfare.",
+
+  coverImage:
+    "https://lh3.googleusercontent.com/aida-public/AB6AXuDz7N5cQyzZ0r2i4hmDMYWXdBWn18xiSo5sgG4icaLfDQcUUQc0jqHZdOm47_x9hxTn5roflwKo8esg2NEOLp3r9-rZWMb3UHqvMI-g4cEk5V9nJ-R-nhnPFSUaWGYdJM2TOyVTGvVkktEhlWf3wunW-zaQGbkz3qy3SGhuNssBmPsEmlJ1LO-gjJlvmTjX49RmGwaCwW8JytjPbAX3sXov2uhKbmIVi2XRcxam1DRX09SeivETILXLf7mwx48ss1wihMHo1y_dNgTq",
+
+  features: [
+    {
+      icon: "spa",
+      title: "Easier Digestion",
+      desc: "Free from A1 protein to prevent bloating.",
+    },
+    {
+      icon: "water_drop",
+      title: "Nutrient Dense",
+      desc: "Rich in Calcium, Potassium & Vitamin D.",
+    },
+    {
+      icon: "agriculture",
+      title: "Grass-Fed Cows",
+      desc: "No hormones or antibiotics used.",
+    },
+  ],
     products: [
       {
         id: "da1",
@@ -195,8 +183,33 @@ export const catalogData = [
   /* ===================== LIVE PRODUCE ===================== */
   {
     id: "live",
-    title: "Country Chicken & Fish",
+    title: "Country Chicken & Live Fish",
     description: "Naturally raised poultry and fresh live fish.",
+    shortDescription:
+    "Rediscover the joy of dairy with our selection of 100% A2 protein milk.",
+  longDescription:
+    "Our heritage breed cows produce milk containing only the A2 beta-casein protein. Sourced from local farms practicing ethical animal welfare.",
+
+  coverImage:
+    "https://lh3.googleusercontent.com/aida-public/AB6AXuDz7N5cQyzZ0r2i4hmDMYWXdBWn18xiSo5sgG4icaLfDQcUUQc0jqHZdOm47_x9hxTn5roflwKo8esg2NEOLp3r9-rZWMb3UHqvMI-g4cEk5V9nJ-R-nhnPFSUaWGYdJM2TOyVTGvVkktEhlWf3wunW-zaQGbkz3qy3SGhuNssBmPsEmlJ1LO-gjJlvmTjX49RmGwaCwW8JytjPbAX3sXov2uhKbmIVi2XRcxam1DRX09SeivETILXLf7mwx48ss1wihMHo1y_dNgTq",
+
+  features: [
+    {
+      icon: "spa",
+      title: "Easier Digestion",
+      desc: "Free from A1 protein to prevent bloating.",
+    },
+    {
+      icon: "water_drop",
+      title: "Nutrient Dense",
+      desc: "Rich in Calcium, Potassium & Vitamin D.",
+    },
+    {
+      icon: "agriculture",
+      title: "Grass-Fed Cows",
+      desc: "No hormones or antibiotics used.",
+    },
+  ],
     products: [
       {
         id: "li1",
@@ -260,6 +273,31 @@ export const catalogData = [
     id: "herbs",
     title: "Herbs, Spices & Nuts",
     description: "Authentic spices and herbs for daily cooking.",
+    shortDescription:
+    "Rediscover the joy of dairy with our selection of 100% A2 protein milk.",
+  longDescription:
+    "Our heritage breed cows produce milk containing only the A2 beta-casein protein. Sourced from local farms practicing ethical animal welfare.",
+
+  coverImage:
+    "https://lh3.googleusercontent.com/aida-public/AB6AXuDz7N5cQyzZ0r2i4hmDMYWXdBWn18xiSo5sgG4icaLfDQcUUQc0jqHZdOm47_x9hxTn5roflwKo8esg2NEOLp3r9-rZWMb3UHqvMI-g4cEk5V9nJ-R-nhnPFSUaWGYdJM2TOyVTGvVkktEhlWf3wunW-zaQGbkz3qy3SGhuNssBmPsEmlJ1LO-gjJlvmTjX49RmGwaCwW8JytjPbAX3sXov2uhKbmIVi2XRcxam1DRX09SeivETILXLf7mwx48ss1wihMHo1y_dNgTq",
+
+  features: [
+    {
+      icon: "spa",
+      title: "Easier Digestion",
+      desc: "Free from A1 protein to prevent bloating.",
+    },
+    {
+      icon: "water_drop",
+      title: "Nutrient Dense",
+      desc: "Rich in Calcium, Potassium & Vitamin D.",
+    },
+    {
+      icon: "agriculture",
+      title: "Grass-Fed Cows",
+      desc: "No hormones or antibiotics used.",
+    },
+  ],
     products: [
       {
         id: "he1",

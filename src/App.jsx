@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import ProductListing from "./pages/ProductListing";
+import ProductDetail from "./pages/ProductDetail";
+import ModernFarming from "./pages/ModernFarming";
 
 export default function App() {
   return (
@@ -14,10 +16,11 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<ProductListing />} />
+            <Route path="/product/:id" element={<ProductDetail />} />
+            <Route path="/modernfarming" element={<ModernFarming />} />
           </Routes>
         </main>
         <Footer />
-
       </div>
     </Router>
   );

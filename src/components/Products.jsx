@@ -1,7 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Products() {
+
+  const navigate = useNavigate();
+
   const items = [
+    
+    {
+      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCu-dovww4n2IrNmvCNUSI22SACfEAQRFOyRXs6iUJqmKSm4cD3kqppYNBEFnc8eesBkN7Y6VjZEErpviN715nfI-hDQ-i0JmMDcNJbuUmDSIReUx60xJRkgd0m_GwTtp7aGGQ8fg8iLRxr0Qhdo_as1kUmlNVyVMDhGpKKHwqhXbKW2muqIMg7vAodwLHchNSStHzt4-xq9Xbbrxk0EHX12eL2fiEqw8vsfLHc96-6drEopoXP4gV81Cmf1zxkX7YXxsqkfni71RlP",
+      title: "Earthworm & Soil Care",
+      desc: "Production of earthworms for farming.",
+      wide: true,
+    },
     {
       img: "https://lh3.googleusercontent.com/aida-public/AB6AXuA88GgxOgbQS2JyDlv1I8E3Ya8-s24yuBZAyYzO6i5AkoTTB4sPn1pM2KNXRJOfOMcGBh-zXl-2RhGFH120adK28mSl0WZdAVNNT4z8Xm8NtDkqXzJfDkS0Tt0oaEhs-xRoDerg6wg4U0o5S8QsTuabwJoKUxXta2Czq24fMSxnp3evb9x1dOLLBktpfvpwi9Y8zH6ZoPspV6mWb522tMTfg5XAYe0hZSLQsnUMBe2B8Z2IGxB41i7lDQhZXX5-LpDurATF4jSBkOiG",
       title: "A2 Milk & Dairy",
@@ -21,12 +32,6 @@ export default function Products() {
       img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDFBkV9d8FCEBm2CvqEvZ4Oy-e4H-bVlN-T0j7w86HoRN_wXUKAHG7CCJosYypeJwy214igjcoXLVLSzuGU8d0KmJXAARcDVMldoFKL-BlHXGeHWuOWePwu9RvK1Lh8lnSqWvA4pifzKJfFwFVHnByQu4r_0OfQpGCPyH0-a9JccWV9ojByH7dSqMJcrCKrBUak98D3M4gqo-e1NeOY3nAGZMyGbgB-U3omgzDktwPrNYcy2SpCsOxxAzQ6JDxPI65WcPpRGkf3ZdNj",
       title: "Spices, Nuts & More",
       desc: "Authentic flavors for your kitchen.",
-      wide: true,
-    },
-    {
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCu-dovww4n2IrNmvCNUSI22SACfEAQRFOyRXs6iUJqmKSm4cD3kqppYNBEFnc8eesBkN7Y6VjZEErpviN715nfI-hDQ-i0JmMDcNJbuUmDSIReUx60xJRkgd0m_GwTtp7aGGQ8fg8iLRxr0Qhdo_as1kUmlNVyVMDhGpKKHwqhXbKW2muqIMg7vAodwLHchNSStHzt4-xq9Xbbrxk0EHX12eL2fiEqw8vsfLHc96-6drEopoXP4gV81Cmf1zxkX7YXxsqkfni71RlP",
-      title: "Earthworm & Soil Care",
-      desc: "Production of earthworms for farming.",
     },
   ];
 
@@ -62,8 +67,11 @@ export default function Products() {
                 <p className="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {item.desc}
                 </p>
-                <a className="text-secondary font-bold text-sm mt-4 group-hover:text-white" href="#">
+                <button className="text-secondary font-bold text-sm mt-4 group-hover:text-white" onClick={() => navigate('/products')}>
                   Shop Now →
+                </button>
+                <a className="" href="#">
+                  
                 </a>
               </div>
             </div>

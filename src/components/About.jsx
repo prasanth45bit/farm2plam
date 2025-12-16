@@ -18,9 +18,13 @@ export default function About() {
             <Users size={40} />
           </div>
 
-          <h2 className="text-4xl font-display color-red font-bold mt-6">
-            Farm-to-Palm Philosophy
+          <h2 className="mt-6 text-4xl font-display font-bold text-black">
+            <span className="font-display font-bold text-blue-900">
+              Farm<span className="text-red-500">2</span>Palm
+            </span>{" "}
+            Philosophy
           </h2>
+
 
           <p className="text-xl text-black mt-4">
             We bridge the gap between farmers and consumers, ensuring fair pricing and fresh,

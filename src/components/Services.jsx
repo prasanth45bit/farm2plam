@@ -1,7 +1,11 @@
 import React from "react";
 import { CheckCircle } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+
 
 export default function Services() {
+  const navigate = useNavigate();
+
   return (
     <section id="services" className="py-20 bg-primary text-white">
       <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-16 items-center">
@@ -36,10 +40,13 @@ export default function Services() {
               )
             )}
           </ul>
+          <button
+  className="bg-white text-primary px-8 py-3 rounded-full font-bold shadow-lg mr-4 hover:-translate-y-0.5 transition"
+  onClick={() => navigate("/modernfarming")}
+>
+  Learn Technology
+</button>
 
-          <a className="bg-white text-primary px-8 py-3 rounded-full font-bold shadow-lg" href="#">
-            Learn Technology
-          </a>
         </div>
 
       </div>

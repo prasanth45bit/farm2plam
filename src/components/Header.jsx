@@ -12,10 +12,10 @@ export default function Header() {
             <div className="inline-flex items-center gap-2 bg-green-100 px-4 py-2 rounded-full text-primary font-bold text-sm uppercase tracking-wide">
               <Leaf size={16} /> 100% Organic & Chemical Free
             </div>
-            <h1 className="text-5xl lg:text-7xl font-display font-bold text-gray-900 leading-tight">
-              Tasty & Healthy <br/>
-              <span className="text-primary relative inline-block">
-                Organic Food
+            <h1 className="text-4xl lg:text-5xl font-display font-bold text-gray-900 leading-tight">
+              Organic Products & <br/>
+              <span className="text-primary text-5xl lg:text-6xl relative inline-block">
+                Production of earthworms
                 <svg className="absolute w-full h-3 -bottom-1 left-0 text-secondary opacity-60" fill="none" viewBox="0 0 200 9" xmlns="http://www.w3.org/2000/svg"><path d="M2.00025 6.99997C25.7509 9.36481 124.98 9.61398 198.9 2.59762" stroke="currentColor" strokeWidth="3"></path></svg>
               </span>
             </h1>
@@ -40,7 +40,7 @@ export default function Header() {
                 </div>
                 <div>
                   <p className="font-bold text-gray-900 text-sm">Top Quality</p>
-                  <p className="text-xs text-black">Certified Organic Products</p>
+                  <p className="text-xs text-black">Organic Products</p>
                 </div>
               </div>
             </div>
