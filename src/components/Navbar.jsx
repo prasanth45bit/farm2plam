@@ -26,17 +26,18 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 items-center">
-            <Link className="text-primary font-medium" to="/">Home</Link>
-            <Link className="text-black hover:text-primary" to="/#about">About Us</Link>
-            <Link className="text-black hover:text-primary" to="/products">Products</Link>
-            <Link className="text-black hover:text-primary" to="/#services">Services</Link>
-            <Link className="text-black hover:text-primary" to="/#contact">Contact</Link>
+            <a href="/#home" className="text-primary font-medium">Home</a>
+            <a href="/#about" className="text-black hover:text-primary">About Us</a>
+            <Link to="/products" className="text-black hover:text-primary">Products</Link>
+            <a href="/#services" className="text-black hover:text-primary">Services</a>
+            <a href="/#contact" className="text-black hover:text-primary">Contact</a>
           </div>
+
 
           {/* Desktop Icons */}
           <div className="hidden md:flex items-center space-x-6">
             <button className="text-gray-500 hover:text-primary">
-              <Search size={20} />
+              {/* <Search size={20} /> */}
             </button>
 
             <div className="relative">
@@ -53,44 +54,7 @@ export default function Navbar() {
               Shop Now
             </Link>
 
-            <button
-              className="
-    hidden sm:inline-flex items-center
-    px-4 py-2
-    rounded-lg
-    text-sm font-semibold
-    border border-gray-200
-    bg-white/70 backdrop-blur
-    text-gray-700
-    shadow-sm
-    transition-all duration-300
-    hover:bg-primary hover:text-white hover:border-primary
-    hover:shadow-md hover:-translate-y-0.5
-    focus:outline-none focus:ring-2 focus:ring-primary/40
-  "
-            >
-              Sign In
-            </button>
 
-            <button
-              className="
-    hidden sm:inline-flex items-center
-    px-4 py-2 ml-2
-    rounded-lg
-    text-sm font-semibold
-    border border-gray-200
-    bg-white/70 backdrop-blur
-    text-gray-700
-    shadow-sm
-    transition-all duration-300
-    hover:bg-primary hover:text-white hover:border-primary
-    hover:shadow-md hover:-translate-y-0.5
-    focus:outline-none focus:ring-2 focus:ring-primary/40
-  "
-            >
-              <User size={16} className="mr-2" />
-              Account
-            </button>
 
           </div>
 
@@ -106,63 +70,61 @@ export default function Navbar() {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden pb-4 border-t border-gray-100 mt-2">
-            <Link className="block px-4 py-2 text-black hover:text-primary hover:bg-gray-50" to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
-            <Link className="block px-4 py-2 text-black hover:text-primary hover:bg-gray-50" to="/#about" onClick={() => setIsMenuOpen(false)}>About Us</Link>
-            <Link className="block px-4 py-2 text-black hover:text-primary hover:bg-gray-50" to="/products" onClick={() => setIsMenuOpen(false)}>Products</Link>
-            <Link className="block px-4 py-2 text-black hover:text-primary hover:bg-gray-50" to="/#services" onClick={() => setIsMenuOpen(false)}>Services</Link>
-            <Link className="block px-4 py-2 text-black hover:text-primary hover:bg-gray-50" to="/#contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+            <a
+              href="/#home"
+              className="block px-4 py-2 text-black hover:text-primary hover:bg-gray-50"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Home
+            </a>
+
+            <a
+              href="/#about"
+              className="block px-4 py-2 text-black hover:text-primary hover:bg-gray-50"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              About Us
+            </a>
+
+            <Link
+              to="/products"
+              className="block px-4 py-2 text-black hover:text-primary hover:bg-gray-50"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Products
+            </Link>
+
+            <a
+              href="/#services"
+              className="block px-4 py-2 text-black hover:text-primary hover:bg-gray-50"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Services
+            </a>
+
+            <a
+              href="/#contact"
+              className="block px-4 py-2 text-black hover:text-primary hover:bg-gray-50"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contact
+            </a>
 
             {/* Mobile Icons */}
-            <div className="flex items-center gap-4 px-4 py-3 border-t border-gray-200">
-              <Search size={20} className="text-gray-600" />
+            <div className="flex items-center justify-between gap-4 px-4 py-3 border-t border-gray-200">
+              {/* <Search size={20} className="text-gray-600" /> */}
               <div className="relative">
                 <ShoppingBag size={20} className="text-gray-600" />
                 <span className="absolute -top-1 -right-1 bg-secondary text-white text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center">0</span>
               </div>
+              <Link
+                to="/products"
+                className="bg-primary hover:bg-lime-700 text-white px-6 py-2.5 rounded-full font-bold text-sm"
+              >
+                Shop Now
+              </Link>
             </div>
 
-            {/* Mobile Account Buttons */}
-            <div className="px-4 mt-3 space-y-2">
-              <button
-                className="
-    hidden sm:inline-flex items-center
-    px-4 py-2
-    rounded-lg
-    text-sm font-semibold
-    border border-gray-200
-    bg-white/70 backdrop-blur
-    text-gray-700
-    shadow-sm
-    transition-all duration-300
-    hover:bg-primary hover:text-white hover:border-primary
-    hover:shadow-md hover:-translate-y-0.5
-    focus:outline-none focus:ring-2 focus:ring-primary/40
-  "
-              >
-                Sign In
-              </button>
-
-              <button
-                className="
-    hidden sm:inline-flex items-center
-    px-4 py-2 ml-2
-    rounded-lg
-    text-sm font-semibold
-    border border-gray-200
-    bg-white/70 backdrop-blur
-    text-gray-700
-    shadow-sm
-    transition-all duration-300
-    hover:bg-primary hover:text-white hover:border-primary
-    hover:shadow-md hover:-translate-y-0.5
-    focus:outline-none focus:ring-2 focus:ring-primary/40
-  "
-              >
-                <User size={16} className="mr-2" />
-                Account
-              </button>
-
-            </div>
 
           </div>
         )}

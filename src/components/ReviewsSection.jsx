@@ -7,11 +7,11 @@ export default function ReviewsSection({ reviews }) {
 
         <div className="lg:w-1/3 bg-[#f9fcf8] border rounded-xl p-6">
           <div className="text-center mb-6">
-            <div className="text-5xl font-black">{reviews.summary.rating}</div>
-            <p className="text-sm">Based on {reviews.summary.total} reviews</p>
+            {/* <div className="text-5xl font-black">{reviews.summary.rating}</div> */}
+            {/* <p className="text-sm">Based on {reviews.summary.total} reviews</p> */}
           </div>
 
-          {reviews.summary.distribution.map((d) => (
+          {/* {reviews.summary.distribution.map((d) => (
             <div key={d.star} className="flex gap-3 text-sm mb-2">
               <span className="w-8 text-right">{d.star}</span>
               <div className="flex-1 h-2 bg-[#eaf3e7] rounded-full">
@@ -19,7 +19,7 @@ export default function ReviewsSection({ reviews }) {
               </div>
               <span>{d.percent}%</span>
             </div>
-          ))}
+          ))} */}
         </div>
 
         <div className="lg:w-2/3 space-y-6">

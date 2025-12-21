@@ -1,7 +1,7 @@
 import React from "react";
 import { Leaf, Handshake, Truck } from "lucide-react";
 
-export default function Features() {
+export default function Features({ id }) {
   const features = [
     { icon: Leaf, title: "100% Organic", text: "Grown without chemicals for a healthier lifestyle directly from mother earth." },
     { icon: Handshake, title: "Zero Brokerage", text: "Directly from farmers to your palm. No middlemen, fair prices for everyone." },
@@ -9,7 +9,7 @@ export default function Features() {
   ];
 
   return (
-    <section className="py-16 bg-white border-t border-gray-100">
+    <section id={id} className="py-16 bg-white border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           {features.map((item, i) => {

@@ -1,21 +1,22 @@
 import { useState } from "react";
 
-export default function ProductGallery({ images }) {
-  const [activeImage, setActiveImage] = useState(images[0]);
+export default function ProductGallery({ image }) {
+  const [activeImage, setActiveImage] = useState(image);
 
   return (
     <div className="flex-1 min-w-0 space-y-4">
 
       {/* Main Image */}
-      <div className="aspect-square rounded-2xl overflow-hidden bg-[#f0f5ed] group">
-        <img
-          src={activeImage}
-          alt="Product"
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-        />
-      </div>
+<div className="w-full max-w-sm mx-auto sm:max-w-md lg:max-w-lg aspect-square rounded-2xl  overflow-hidden bg-[#f0f5ed] group">
+  <img
+    src={activeImage}
+    alt="Product"
+    className="w-full h-full object-cover m-5 transition-transform duration-500 group-hover:scale-105"
+  />
+</div>
 
-      {/* Thumbnails */}
+
+      {/* Thumbnails
       <div className="grid grid-cols-5 gap-3 overflow-x-auto overflow-y-hidden scrollbar-hide">
         {images.slice(0, 5).map((img, index) => (
           <button
@@ -35,7 +36,7 @@ export default function ProductGallery({ images }) {
             />
           </button>
         ))}
-      </div>
+      </div> */}
 
     </div>
   );

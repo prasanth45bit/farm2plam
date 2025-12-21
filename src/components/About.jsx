@@ -1,7 +1,7 @@
 import React from "react";
 import { Users } from "lucide-react";
 
-export default function About() {
+export default function About({ id }) {
   const stats = [
     { num: "3+", label: "Years Active" },
     { num: "100%", label: "Chemical Free" },

@@ -8,12 +8,13 @@ import About from "../components/About";
  function Home() {
   return (
     <div className="font-sans antialiased">
-      <Header />
-      <Features />
-      <Products />
-      <Services />
-      <About />
-    </div>
+  <Header id="home" />
+  <Features id="features" />
+  <Products id="products" />
+  <Services id="services" />
+  <About id="about" />
+</div>
+
   );
 }
 

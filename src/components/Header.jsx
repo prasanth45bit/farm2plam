@@ -1,9 +1,11 @@
 import React from "react";
 import { Leaf, ArrowRight, Play, Star } from "lucide-react";
 
+const id = "home";
+
 export default function Header() {
   return (
-    <header className="relative bg-surface-light overflow-hidden">
+    <header id={id}  className="relative bg-surface-light overflow-hidden">
       <div className="absolute top-0 right-0 -mr-20 -mt-20 w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-[400px] h-[400px] bg-secondary/10 rounded-full blur-3xl" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 relative z-10">
