@@ -216,7 +216,7 @@ export default function ModernFarming() {
                   <img 
                     alt="Drip irrigation system close up" 
                     className="relative rounded-3xl shadow-xl w-full h-[400px] object-cover border border-gray-100 " 
-                    src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&h=400&fit=crop"
+                    src="https://www.netafimusa.com/cdn-cgi/image/format=auto,fit=crop,quality=80,width=1500/globalassets/usa/s80-valves.jpg?v=492471"
                   />
                   <div className="absolute top-6 left-6 bg-white  p-3 rounded-xl shadow-lg flex items-center gap-3">
                     <div className="bg-cyan-100  p-2 rounded-lg text-cyan-600">

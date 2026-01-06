@@ -39,7 +39,7 @@ export default function Navbar() {
             <NavLink to="/" end className={navClass}>Home</NavLink>
             <a href="/#about" className="text-black hover:text-primary">About Us</a>
             <NavLink to="/products" className={navClass}>Products</NavLink>
-            <a href="/#services" className="text-black hover:text-primary">Services</a>
+            <a href="/services" className="text-black hover:text-primary">Services</a>
             <a href="/#contact" className="text-black hover:text-primary">Contact</a>
           </div>
 
@@ -94,7 +94,7 @@ export default function Navbar() {
             </NavLink>
 
             <a
-              href="/#services"
+              href="/services"
               onClick={() => setIsMenuOpen(false)}
               className="block px-4 py-2 text-black hover:text-primary hover:bg-gray-50"
             >

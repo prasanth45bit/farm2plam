@@ -54,7 +54,7 @@ export default function ProductDetail() {
           </div>
 
           <a
-            href={`https://wa.me/919876543210?text=I am interested in ${product.title}`}
+            href={`https://wa.me/919486084040?text=I am interested in ${product.title}`}
             target="_blank"
             rel="noreferrer"
             className="block text-center bg-[#25D366] hover:bg-[#20bd5a] text-white py-4 rounded-xl font-bold text-lg shadow"

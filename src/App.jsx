@@ -19,7 +19,7 @@ export default function App() {
             <Route path="/products" element={<ProductListing />} />
             <Route path="/products/:categoryId" element={<ProductListing />} />
             <Route path="/product/:productId" element={<ProductDetail />} />
-            <Route path="/modernfarming" element={<ModernFarming />} />
+            <Route path="/services" element={<ModernFarming />} />
             <Route path="/upload" element={<ImageUpload />} />
             <Route path="*" element={<Home />} />
           </Routes>

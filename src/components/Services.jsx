@@ -42,7 +42,7 @@ export default function Services() {
           </ul>
           <button
   className="bg-white text-primary px-8 py-3 rounded-full font-bold shadow-lg mr-4 hover:-translate-y-0.5 transition"
-  onClick={() => navigate("/modernfarming")}
+  onClick={() => navigate("/services")}
 >
   Learn Technology
 </button>
