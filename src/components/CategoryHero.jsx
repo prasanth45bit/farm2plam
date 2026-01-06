@@ -71,7 +71,7 @@ export default function CategoryHero({ category }) {
       {/* FEATURES */}
       <div className="bg-[#f9fcf8] border-t border-[#eaf3e7] px-8 py-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {category.features.map((f, i) => {
+          {/* {category.features.map((f, i) => {
             const Icon = iconMap[f.icon];
             return (
               <div key={i} className="flex items-start gap-4 group">
@@ -88,7 +88,7 @@ export default function CategoryHero({ category }) {
                 </div>
               </div>
             );
-          })}
+          })} */}
         </div>
       </div>
     </div>

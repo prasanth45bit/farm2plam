@@ -1,43 +1,30 @@
 import React from "react";
 
-export default function SidebarFilters({
-  categories,
-  selectedCategory,
-  onSelectCategory,
-}) {
+export default function SidebarFilters({ categories, selectedCategory, onSelectCategory }) {
   return (
-    <aside className="w-full border rounded-lg p-4 bg-white sticky top-24">
-      <h3 className="font-semibold text-black mb-4">Categories</h3>
+    <div className="bg-white text-black rounded-xl shadow-sm p-5 sticky top-24">
+      <h3 className="font-bold text-lg mb-4">Categories</h3>
 
-      <ul className="space-y-3 text-sm">
-        <li
-          onClick={() => onSelectCategory(null)}
-          className={`cursor-pointer px-2 py-1 rounded ${
-            selectedCategory === null
-              ? "text-green-600 font-semibold bg-green-50"
-              : "text-gray-700 hover:bg-gray-100"
-          }`}
-        >
-          All Products
-        </li>
+      <button
+        onClick={() => onSelectCategory(null)}
+        className={`block w-full text-left px-3 py-2 rounded-lg mb-2 transition
+          ${!selectedCategory ? "bg-green-100 text-green-700 font-semibold" : "hover:bg-gray-100"}`}
+      >All Products
+      </button>
 
-        {categories.map((cat) => (
-          <li
-            key={cat.id}
-            onClick={() => onSelectCategory(cat.id)}
-            className={`cursor-pointer px-2 py-1 rounded flex justify-between ${
-              selectedCategory === cat.id
-                ? "text-green-600 font-semibold bg-green-50"
-                : "text-gray-700 hover:bg-gray-100"
+      {categories.map((cat) => (
+        <button
+          key={cat._id}
+          onClick={() => onSelectCategory(cat._id)} 
+          className={`block w-full text-left px-3 py-2 rounded-lg mb-1 transition
+            ${selectedCategory === cat._id
+              ? "bg-green-100 text-green-700 font-semibold"
+              : "hover:bg-gray-100"
             }`}
-          >
-            <span>{cat.title}</span>
-            <span className="text-gray-400">
-              {cat.products.length}
-            </span>
-          </li>
-        ))}
-      </ul>
-    </aside>
+        >
+          {cat.title}
+        </button>
+      ))}
+    </div>
   );
 }
