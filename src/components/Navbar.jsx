@@ -38,7 +38,7 @@ export default function Navbar() {
           <div className="hidden md:flex space-x-8 items-center">
             <NavLink to="/" end className={navClass}>Home</NavLink>
             <a href="/#about" className="text-black hover:text-primary">About Us</a>
-            <NavLink to="/products" className={navClass}>Products</NavLink>
+            <NavLink to="/product" className={navClass}>Products</NavLink>
             <NavLink to="/services"  className={navClass}>Services</NavLink>
             <a href="/#contact" className="text-black hover:text-primary">Contact</a>
           </div>
@@ -55,7 +55,7 @@ export default function Navbar() {
             </div>
 
             <NavLink
-              to="/products"
+              to="/product"
               className="bg-primary hover:bg-lime-700 text-white px-6 py-2.5 rounded-full font-bold text-sm"
             >
               Shop Now
@@ -89,7 +89,7 @@ export default function Navbar() {
               About Us
             </a>
 
-            <NavLink to="/products" onClick={() => setIsMenuOpen(false)} className={mobileNavClass}>
+            <NavLink to="/product" onClick={() => setIsMenuOpen(false)} className={mobileNavClass}>
               Products
             </NavLink>
 
@@ -98,7 +98,7 @@ export default function Navbar() {
             </NavLink>
 
             <a
-              href="/#contact"
+              href="#contact"
               onClick={() => setIsMenuOpen(false)}
               className="block px-4 py-2 text-black hover:text-primary hover:bg-gray-50"
             >
@@ -115,7 +115,7 @@ export default function Navbar() {
               </div>
 
               <NavLink
-                to="/products"
+                to="/product"
                 onClick={() => setIsMenuOpen(false)}
                 className="bg-primary hover:bg-lime-700 text-white px-6 py-2.5 rounded-full font-bold text-sm"
               >

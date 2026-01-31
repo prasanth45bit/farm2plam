@@ -40,7 +40,7 @@ export default function Products() {
     className={`group relative rounded-2xl overflow-hidden shadow-md cursor-pointer h-80 ${
       item.wide ? "lg:col-span-2" : ""
     }`}
-    onClick={() => navigate(`/products/${item.categoryId}`)}
+    onClick={() => navigate(`/product/${item.categoryId}`)}
   >
     <img
       src={item.coverImage}

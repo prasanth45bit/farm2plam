@@ -25,7 +25,7 @@ export default function Header() {
               Get farm-fresh, chemical-free organic products directly from farmers with zero brokerage. Enjoy a healthier lifestyle with A2 milk, ghee, paneer, and fresh produce.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
-              <a className="bg-primary hover:bg-lime-700 text-white px-8 py-4 rounded-full font-bold text-base transition transform hover:-translate-y-1 shadow-xl shadow-lime-600/30 flex items-center gap-2" href="#products">
+              <a className="bg-primary hover:bg-lime-700 text-white px-8 py-4 rounded-full font-bold text-base transition transform hover:-translate-y-1 shadow-xl shadow-lime-600/30 flex items-center gap-2" href="#product">
                 Discover More <ArrowRight size={20} />
               </a>
               <a className="bg-white border border-gray-200 hover:border-primary text-gray-800 px-8 py-4 rounded-full font-bold text-base transition flex items-center gap-2" href="#about">
